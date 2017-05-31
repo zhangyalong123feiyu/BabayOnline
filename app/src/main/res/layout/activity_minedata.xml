@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/tittlebar" />
+
+    <RelativeLayout
+        android:id="@+id/minephoto"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+       >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="个人资料"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/headphoto"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+           android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@id/iv2"
+            android:src="@drawable/mine_data" />
+
+        <ImageView
+            android:id="@+id/iv2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/home_rightarrow" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d9d9d9" />
+    <RelativeLayout
+        android:id="@+id/minename"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="姓名"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/username"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:text="zhangyalong"
+            android:textSize="15sp" />
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d9d9d9" />
+    <RelativeLayout
+        android:id="@+id/minesex"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="性别"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/usersex"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:drawableLeft="@drawable/mine_yellow"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:text="男"
+            android:textSize="15sp" />
+
+
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d9d9d9" />
+    <RelativeLayout
+        android:id="@+id/mineidetitynumber"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="身份证号"
+            android:textSize="15sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:text="14222"
+            android:textSize="15sp"
+            android:id="@+id/useridtitynumber" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#d9d9d9" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d9d9d9" />
+    <RelativeLayout
+        android:id="@+id/minetelenumber"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="手机号码"
+            android:textSize="15sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:text="1393500"
+            android:textSize="15sp"
+            android:id="@+id/usertelenumber" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d9d9d9" />
+    <RelativeLayout
+        android:id="@+id/minemail"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="邮箱"
+            android:textSize="15sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:drawableRight="@drawable/home_rightarrow"
+            android:drawablePadding="10dp"
+            android:text="409812937@qq.com"
+            android:textSize="15sp"
+            android:id="@+id/useremail" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d9d9d9" />
+    <RelativeLayout
+        android:id="@+id/mineaddress"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="地址"
+            android:textSize="15sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:drawableRight="@drawable/home_rightarrow"
+            android:drawablePadding="10dp"
+            android:text="14222"
+            android:textSize="15sp"
+            android:id="@+id/useraddress" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#d9d9d9" />
+    <RelativeLayout
+        android:id="@+id/mineemergencycontact"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="紧急联络"
+            android:textSize="15sp" />
+        <TextView
+            android:id="@+id/usernumber"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:drawableRight="@drawable/home_rightarrow"
+            android:drawablePadding="10dp"
+            android:text="14222"
+            android:textSize="15sp" />
+    </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#d9d9d9" />
+    <RelativeLayout
+        android:id="@+id/minesignatrue"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="个性签名"
+            android:textSize="15sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:drawableRight="@drawable/home_rightarrow"
+            android:drawablePadding="10dp"
+            android:text="好小子"
+            android:textSize="15sp"
+            android:id="@+id/usersignatrue" />
+    </RelativeLayout>
+</LinearLayout>

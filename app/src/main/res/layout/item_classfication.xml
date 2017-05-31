@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/classficationphoto"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/icon_add"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:id="@+id/classficationtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="今天是韩国的儿童节"
+        android:layout_toRightOf="@id/classficationphoto"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:id="@+id/classficationcontent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="在游戏中学习"
+        android:layout_toRightOf="@id/classficationphoto"
+       android:layout_marginTop="40dp"
+        android:layout_marginLeft="10dp"
+        />
+    <TextView
+        android:id="@+id/classficationtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2016.12.6"
+        android:layout_toRightOf="@id/classficationphoto"
+        android:layout_alignBottom="@id/classficationphoto"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:id="@+id/classficationevaluate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2016.12.6"
+        android:drawablePadding="5dp"
+        android:drawableLeft="@drawable/parenting_evaluate"
+        android:layout_toRightOf="@id/classficationtime"
+        android:layout_alignBottom="@id/classficationphoto"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        />
+
+
+</RelativeLayout>

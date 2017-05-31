@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/t"
+        layout="@layout/tittlebar"/>
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/synopsis_comment_saybar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:padding="8dip" >
+
+        <Button
+            android:id="@+id/synopsis_comment_say"
+            android:layout_width="51.0dp"
+            android:layout_height="45dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="发送"
+            android:textColor="@android:color/black"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/synopsis_comment_saywhat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/synopsis_comment_say"
+            android:background="@null"
+            android:hint="写评论。。。"
+            android:paddingBottom="1.0dp"
+            android:paddingTop="4.0dp"
+            android:textColor="#000000"
+            android:textColorHint="#959595"
+            android:textSize="17sp" />
+
+        <View
+            android:id="@+id/synopsis_comment_saywhat_line"
+            android:layout_width="match_parent"
+            android:layout_height="1.0dip"
+            android:layout_below="@id/synopsis_comment_saywhat"
+            android:layout_marginRight="1.5dp"
+            android:layout_toLeftOf="@id/synopsis_comment_say"
+            android:background="#f0b500" />
+
+        <Button
+            android:id="@+id/synopsis_comment_expression"
+            android:layout_width="18.0dp"
+            android:layout_height="18.0dp"
+            android:layout_alignRight="@id/synopsis_comment_saywhat"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8.0dp"
+            android:background="@drawable/syllabus_expression" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/expressioncontainer"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:orientation="vertical"
+        android:layout_height="150dp"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_below="@id/t"
+        android:layout_above="@id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:id="@+id/infohead"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:text="幼儿园"
+                android:layout_marginLeft="10dp"
+                android:background="@android:color/holo_orange_dark"
+                android:textColor="@android:color/white"
+                />
+            <TextView
+                android:id="@+id/infocontent"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:text="内容"
+                />
+            <TextView
+                android:id="@+id/infotime"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:text="2016.12.1"
+                />
+            <WebView
+                android:id="@+id/infowebview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:background="#d9d9d9"/>
+            <TextView
+                android:id="@+id/infocomment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="评论"
+                android:drawableLeft="@drawable/syllabus_comment"
+                android:drawablePadding="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:textSize="18sp"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#d9d9d9"/>
+            <LinearLayout
+                android:id="@+id/infolistview"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
+

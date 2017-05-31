@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/classphoto"
+        android:layout_width="35dp"
+        android:src="@drawable/icon_add"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="35dp" />
+    <TextView
+        android:id="@+id/classnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="张亚龙"
+        android:layout_toRightOf="@id/classphoto"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        />
+    <TextView
+        android:id="@+id/classcontent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="文艺汇演照片集锦"
+        android:layout_toRightOf="@id/classphoto"
+        android:layout_marginLeft="10dp"
+        android:layout_alignBottom="@id/classphoto"
+        />
+
+    <GridLayout
+        android:id="@+id/picgridlayout"
+        android:layout_width="match_parent"
+        android:layout_toRightOf="@id/classphoto"
+        android:layout_below="@id/classphoto"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:columnCount="3"
+        />
+    <TextView
+        android:id="@+id/classinfotime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2016.12.2"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/picgridlayout"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/classphoto"
+        />
+</RelativeLayout>

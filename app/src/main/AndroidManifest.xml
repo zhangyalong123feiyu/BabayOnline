@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="bibi.com.babayonlie">
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"></uses-permission>
+
+    <application
+        android:name=".application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity android:name=".activity.MainActivity">
+        </activity>
+        <activity android:name=".activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.BaseActivity"/>
+        <activity android:name=".activity.TouristsActivity"/>
+        <activity android:name=".activity.LoginActivity"/>
+        <activity android:name=".activity.OtherClassActivity"/>
+        <activity android:name=".activity.SchoolDetailActivity"/>
+        <activity android:name=".activity.BabayOnlineActivity"/>
+        <activity android:name=".activity.BabayPostionActivity"/>
+        <activity android:name=".activity.SafeSendActivity"/>
+        <activity android:name=".activity.WonderFulTimeActivity"/>
+        <activity android:name=".activity.TeachPlanActivity"/>
+        <activity android:name=".activity.EveryDayFoodActivity"/>
+        <activity android:name=".activity.HomeInfoActivity"/>
+        <activity android:name=".activity.InfoDetailActivity"/>
+        <activity android:name=".activity.BigImageActivity"/>
+        <activity android:name=".activity.ClassfiCationActivity"/>
+        <activity android:name=".activity.ArticleActivity"/>
+        <activity android:name=".activity.MineDataActivity"/>
+    </application>
+
+</manifest>
